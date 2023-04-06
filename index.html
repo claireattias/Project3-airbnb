@@ -24,6 +24,7 @@
   <!-- Reference to JavaScript files -->
   <script src="barplot.js"></script>
   <script src="mapplot.js"></script>
+  <script src="bar.js"></script>
   
 </head>
 
@@ -37,6 +38,12 @@
   margin-top: 15px;
   margin-left: 140px;
   margin-bottom:30px;
+}
+
+#bar {
+  height: 400px;
+  width: 65%;
+  margin-left: 280px;
 }
 
 #barPlot {
@@ -72,11 +79,15 @@ h1 {
         <!-- reference to map built in mapplot.js-->
         <div id="map"></div>
 
+        <div id="bar"></div>
+
         <!-- reference to barchart built in barplot.js-->
         <div id="barPlot"></div>
 
+
         <script src="barplot.js"></script>
         <script src="mapplot.js"></script> 
+        <script src="bar.js"></script> 
 
         <script>
           var mapTitle = "Explore Average City Review and Price"; // set map title
