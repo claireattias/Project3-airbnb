@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Reviews</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- Import libraries  -->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+    <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+    integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+    crossorigin="" /> 
+
+  <!-- Leaflet JavaScript code -->
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+    integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+    crossorigin=""></script>
+
+  <!-- Reference to JavaScript files -->
+  <script src="barplot.js"></script>
+  <script src="mapplot.js"></script>
+  
+</head>
+
+<style>
+
+/* Style section used to format and style bar chart / map / text */
+
+#map {
+  height: 400px;
+  width: 80%;
+  margin-top: 15px;
+  margin-left: 140px;
+  margin-bottom:30px;
+}
+
+#barPlot {
+  height: 400px;
+  width: 65%;
+  margin-left: 280px;
+}
+
+.custom-popup {
+  max-width: 2000px;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+#map-title {
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 0px;
+  margin-left: 17px;
+}
+</style>
+
+<body>
+        <h1> Reviews</h1>
+  
+        <div id="map-title"></div>
+
+        <!-- reference to map built in mapplot.js-->
+        <div id="map"></div>
+
+        <!-- reference to barchart built in barplot.js-->
+        <div id="barPlot"></div>
+
+        <script src="barplot.js"></script>
+        <script src="mapplot.js"></script> 
+
+        <script>
+          var mapTitle = "Explore Average City Review and Price"; // set map title
+          var mapTitleDiv = document.getElementById("map-title"); // get map title div
+          mapTitleDiv.innerHTML = mapTitle; // add map title to div
+      </script>
+
+</body>
+
+</html>
+
