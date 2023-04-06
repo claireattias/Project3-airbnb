@@ -2,7 +2,7 @@
 // This gets inserted into the div with an id of "map"
 var myMap = L.map("map", {
     center: [30, 19],
-    zoom: 3
+    zoom: 2
   });
 
 // Add a tile layer (shows the actual map)
