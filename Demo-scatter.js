@@ -5,7 +5,7 @@ function init() {
     y: [5477,14039,752,20895,11441,18605,432,],
     mode:'markers+text',
     marker:{color:'orange',
-    size:14
+    size:18
     },
     text: ['Bangkok',  'Instanbul', 'Paris', 'London', 'Newyork','Singapore ', 'Hongkong'],
   textfont : {size: 18,
@@ -13,8 +13,21 @@ function init() {
   },
   textposition: 'Top center',
     }];
-  
-   Plotly.newPlot("plot", data);
+
+  var layout = {
+      title: 'Listing count & price ',
+      xaxis: {
+        title: 'Average listing price',
+        showgrid: false,
+        zeroline: false
+      },
+      yaxis: {
+        title: 'Listing count ',
+        showline: false
+      }
+    };
+    
+   Plotly.newPlot("plot", data, layout);
 }
   
   // Call updatePlotly() when a change takes place to the DOM
@@ -32,9 +45,7 @@ function init() {
     // Initialize x and y arrays
     var x = [];
     var y = [];
-    var layout = {
-      title:'Adding Names to Line and Scatter Plot'
-    }
+    
   
     if (dataset === 'Entire home/apt') {
       x = [100,147,184,278,263,414,171];
