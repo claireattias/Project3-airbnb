@@ -1,3 +1,6 @@
+### Link to main page
+https://claireattias.github.io/project3-main-link/
+
 ### Link to Google Drive containing project proposal, raw data, and slide deck
 https://docs.google.com/document/d/1AdZc8xaXb26BjD6qQtW641WYdzQ-VDg017xQ2rSanCc/edit?usp=share_link 
 
