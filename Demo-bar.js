@@ -1,7 +1,7 @@
 
 var trace1 = {
     x: ['Bangkok',  'Instanbul', 'Paris', 'London', 'Newyork','Singapore ', 'Hongkong'],
-    y: [150,240,280,300,340,360,400],
+    y: [100,147,184,278,263,414,171],
     type: 'bar',
     name: 'Entire home/apt',
     marker: {
@@ -12,7 +12,7 @@ var trace1 = {
 
   var trace2 = {
     x: ['Bangkok',  'Instanbul', 'Paris', 'London', 'Newyork','Singapore ', 'Hongkong'],
-    y: [70,120,140,150,180,170,200],
+    y: [88,95,3,136,166,158,262],
     type: 'bar',
     name: 'Private room',
     marker: {

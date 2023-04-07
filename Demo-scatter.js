@@ -1,14 +1,9 @@
 // Initializes the page with a default plot
 function init() {
   var data = [{
-    x: [150,240,280,300,340,360,400],
+    x: [100,147,184,278,263,414,171],
     y: [5477,14039,752,20895,11441,18605,432,],
-    mode:'lines+markers+text',
-    line:{dash:'dashdot',
-    shape: 'hvh',
-    width:4,
-    color:'rgb(49,170,189)',
-       },
+    mode:'markers+text',
     marker:{color:'orange',
     size:14
     },
@@ -42,13 +37,13 @@ function init() {
     }
   
     if (dataset === 'Entire home/apt') {
-      x = [150,240,280,300,340,360,400];
+      x = [100,147,184,278,263,414,171];
       y = [5477,432,14039,752,20895,11441,18605];
     
     }
   
     else if (dataset === 'Private room') {
-      x = [70,120,140,150,180,170,200];
+      x = [88,95,3,136,166,158,262];
       y = [2134,697,4977,859,12661,8060,2986];
                   
     }
