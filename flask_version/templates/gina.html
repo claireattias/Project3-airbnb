@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body style="font-family:arial, sans-serif">
+    <h1>{{header}}</h1>
+    <h6><a href="/">Return to index page</a></h6>
+
+    <div id="chart" class="chart"></div>
+
+    <div>{{description}}</div>
+
+</body>
+
+<script type="text/javascript">
+    var graphs = {{graphJSON | safe}};
+    Plotly.plot('chart',graphs,{}); 
+    
+</script>
+</html>

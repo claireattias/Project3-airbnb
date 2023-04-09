@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        function updater2(selection) {
+            $.getJSON({
+                url: "/select_price", data: { 'data': selection }, success: function (result) {
+                    Plotly.newPlot('chart3', result, {staticPlot: true});
+                }
+            });
+        }
+    </script>
+    <script>
+        function getComboA(selectObject) {
+            var value = selectObject.value;  
+            console.log(value);
+            }
+    </script>
+</head>
+<body style="font-family:arial, sans-serif">
+    <h1>{{header}}</h1>
+    <h6><a href="/">Return to index page</a></h6>
+                <select name="dropselect" id="selDataset" onchange="updater2(this.value)">
+                    <option value="bangkok">Bangkok</option>
+                    <option value="hongkong">Hong Kong</option>
+                    <option value="istanbul">Istanbul</option>
+                    <option value="london">London</option>
+                    <option value="newyork">New York</option>
+                    <option value="paris">Paris</option>
+                    <option value="singapore">Singapore</option>
+                    <option value="all">All</option>
+                </select>
+    <div id="chart3" class="chart"></div>
+</body>
+
+<script type="text/javascript">
+    var graphs = {{graphJSON | safe}};
+    Plotly.plot('chart3',graphs,{}); 
+</script>
+</html>
