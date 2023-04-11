@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Airbnb Listing of 7 Popular Cities in the World</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <!--load D3 library-->
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <!--load plotly library-->
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 jumbotron text-center">
+        <h2>Airbnb Listings of 7 Popular Cities</h2>
+        <p>Utilize the interactive charts below to explore the dataset</p>
+      </div>
+    </div>
+   
+<hr>
+<p>The below chart reflects the average listing price based on different property types.</p>
+
+<!-- Plotly chart will be drawn inside this DIV -->
+  <div id='BarDiv'></div>
+  <script src="Demo-bar.js"></script>
+<hr>
+
+<p>The below chart reflects the listing count  based on different property types.</p>
+
+  <div id="plot"></div>
+
+  <select id="selDataset">
+    <option value="Entire home/apt">Entire home/apt</option>
+    <option value="Private room">Private room</option>
+  </select>
+
+  <script src="Demo-scatter.js"></script>
+
+<hr>
+
+</body>
+
+</html>
